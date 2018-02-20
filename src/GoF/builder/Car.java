@@ -1,4 +1,4 @@
-package Builder;
+package GoF.builder;
 
 /**
  * Created by Tomas Cejpek on 20/02/2018.
