@@ -1,4 +1,4 @@
-package GoF.test.factoryMethod;
+package test.GoF.factoryMethod;
 
 import GoF.factoryMethod.Rectangle;
 import org.junit.Test;
