@@ -1,6 +1,6 @@
 package test.GoF.singleton;
 
-import GoF.singleton.EagerSingleton;
+import GoF.singleton.LazySingleton;
 import org.junit.Test;
 
 import static org.junit.Assert.assertSame;
@@ -11,9 +11,9 @@ import static org.junit.Assert.assertSame;
 public class LazySingletonTest {
 
 	@Test
-	public void eagerTest() {
-		EagerSingleton lazy1 = EagerSingleton.getInstance();
-		EagerSingleton lazy2 = EagerSingleton.getInstance();
+	public void lazyTest() {
+		LazySingleton lazy1 = LazySingleton.getInstance();
+		LazySingleton lazy2 = LazySingleton.getInstance();
 
 		assertSame(lazy1, lazy2);
 	}
