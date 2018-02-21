@@ -1,9 +1,9 @@
-package GoF.builder;
+package main.GoF.builder;
 
 /**
  * Created by Tomas Cejpek on 20/02/2018.
  */
-public class GreenCarBuilder implements Builder {
+public class BlueCarBuilder implements Builder {
 	private Car car;
 
 	@Override
@@ -13,12 +13,12 @@ public class GreenCarBuilder implements Builder {
 
 	@Override
 	public void setWheels() {
-		this.car.setWheels(4);
+		this.car.setWheels(3);
 	}
 
 	@Override
 	public void setColor() {
-		this.car.setColor("green");
+		this.car.setColor("blue");
 	}
 
 	@Override

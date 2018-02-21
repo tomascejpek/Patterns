@@ -1,6 +1,6 @@
 package test.GoF.singleton;
 
-import GoF.singleton.EagerSingleton;
+import main.GoF.singleton.EagerSingleton;
 import org.junit.Test;
 
 import static org.junit.Assert.assertSame;

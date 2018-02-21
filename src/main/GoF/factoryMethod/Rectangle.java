@@ -1,4 +1,4 @@
-package GoF.factoryMethod;
+package main.GoF.factoryMethod;
 
 /**
  * Created by Tomas Cejpek on 21/02/2018.

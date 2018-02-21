@@ -1,4 +1,4 @@
-package GoF.singleton;
+package main.GoF.singleton;
 
 /**
  * Created by Tomas Cejpek on 18/02/2018.

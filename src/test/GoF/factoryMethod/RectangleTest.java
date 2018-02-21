@@ -1,6 +1,6 @@
 package test.GoF.factoryMethod;
 
-import GoF.factoryMethod.Rectangle;
+import main.GoF.factoryMethod.Rectangle;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotSame;
