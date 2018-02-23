@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Tomas Cejpek on 22/02/2018.
  */
-public class builderTest {
+public class BuilderTest {
 
 	private static final Director director = new Director();
 
