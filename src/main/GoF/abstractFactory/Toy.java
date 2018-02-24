@@ -5,5 +5,5 @@ package main.GoF.abstractFactory;
  */
 public interface Toy {
 
-	String madeOf();
+	MaterialEnum madeOf();
 }

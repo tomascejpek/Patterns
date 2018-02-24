@@ -6,7 +6,7 @@ package main.GoF.abstractFactory;
 public class PlasticHorse implements Toy {
 
 	@Override
-	public String madeOf() {
-		return "Plastic";
+	public MaterialEnum madeOf() {
+		return MaterialEnum.PLASTIC;
 	}
 }

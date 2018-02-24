@@ -6,7 +6,7 @@ package main.GoF.abstractFactory;
 public class WoodenLama implements Toy {
 
 	@Override
-	public String madeOf() {
-		return "Wood";
+	public MaterialEnum madeOf() {
+		return MaterialEnum.WOOD;
 	}
 }
