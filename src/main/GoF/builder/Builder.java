@@ -3,7 +3,7 @@ package main.GoF.builder;
 /**
  * Created by Tomas Cejpek on 20/02/2018.
  */
-public interface Builder {
+interface Builder {
 
 	void buildNew();
 
