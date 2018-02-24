@@ -1,4 +1,7 @@
-package main.GoF.abstractFactory;
+package main.GoF.abstractFactory.otherFactories;
+
+import main.GoF.abstractFactory.MaterialEnum;
+import main.GoF.abstractFactory.ToyFactory;
 
 /**
  * Created by Tomas Cejpek on 24/02/2018.

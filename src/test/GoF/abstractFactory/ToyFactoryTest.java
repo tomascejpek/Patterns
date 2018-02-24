@@ -1,6 +1,8 @@
 package test.GoF.abstractFactory;
 
 import main.GoF.abstractFactory.*;
+import main.GoF.abstractFactory.otherFactories.PlasticToyFactory;
+import main.GoF.abstractFactory.otherFactories.WoodenToyFactory;
 import org.junit.Test;
 
 import static org.junit.Assert.assertSame;

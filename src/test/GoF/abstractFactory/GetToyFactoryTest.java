@@ -1,6 +1,6 @@
 package test.GoF.abstractFactory;
 
-import main.GoF.abstractFactory.GetToyFactory;
+import main.GoF.abstractFactory.otherFactories.GetToyFactory;
 import main.GoF.abstractFactory.MaterialEnum;
 import main.GoF.abstractFactory.ToyFactory;
 import org.junit.Test;
