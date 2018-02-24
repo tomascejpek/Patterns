@@ -12,7 +12,7 @@ import static org.junit.Assert.assertSame;
  */
 public class GetToyFactoryTest {
 
-	private GetToyFactory mainFactory = new GetToyFactory();
+	private static final GetToyFactory mainFactory = new GetToyFactory();
 
 	@Test
 	public void getWoodenToyFactoryTest() {
