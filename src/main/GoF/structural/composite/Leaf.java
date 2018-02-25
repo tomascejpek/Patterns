@@ -6,7 +6,7 @@ package main.GoF.structural.composite;
 public class Leaf implements Component {
 
 	@Override
-	public void doSomething() {
-		System.out.println("print");
+	public int doSomething() {
+		return 1;
 	}
 }

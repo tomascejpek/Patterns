@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Composite implements Component {
 
-	private List<Component> components = new ArrayList<>();
+	private final List<Component> components = new ArrayList<>();
 
 	public void add(Component component) {
 		components.add(component);
@@ -19,9 +19,11 @@ public class Composite implements Component {
 	}
 
 	@Override
-	public void doSomething() {
+	public int doSomething() {
+		int sum = 0;
 		for (Component component : components) {
-			component.doSomething();
+			sum += component.doSomething();
 		}
+		return sum;
 	}
 }
