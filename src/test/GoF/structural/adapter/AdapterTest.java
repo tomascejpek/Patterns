@@ -1,7 +1,7 @@
-package test.GoF.structural;
+package test.GoF.structural.adapter;
 
-import main.GoF.structural.Adaptee;
-import main.GoF.structural.Adapter;
+import main.GoF.structural.adapter.Adaptee;
+import main.GoF.structural.adapter.Adapter;
 import org.junit.Assert;
 import org.junit.Test;
 
