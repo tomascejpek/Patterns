@@ -5,8 +5,8 @@ package main.GoF.structural.facade;
  */
 public class ShapeFacade {
 
-	private Circle circle;
-	private Rectangle rectangle;
+	private final Circle circle;
+	private final Rectangle rectangle;
 
 	public ShapeFacade() {
 		this.circle = new Circle();
