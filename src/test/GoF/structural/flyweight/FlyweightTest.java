@@ -17,13 +17,7 @@ public class FlyweightTest {
 	public void flyweightFactoryTest() {
 		ShapeFactory factory = new ShapeFactory();
 		Circle circle1 = new Circle("red");
-		circle1.setX(1);
-		circle1.setY(1);
-		circle1.setRadius(5);
 		Circle circle2 = new Circle("red");
-		circle2.setX(1);
-		circle2.setY(1);
-		circle2.setRadius(5);
 		assertNotSame(circle1, circle2);
 		assertSame(factory.getCircle("red"), factory.getCircle("red"));
 	}

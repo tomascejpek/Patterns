@@ -3,6 +3,7 @@ package main.GoF.structural.flyweight.variant1;
 /**
  * Created by Tomas Cejpek on 26/02/2018.
  */
+@SuppressWarnings({"unused", "FieldCanBeLocal"})
 public class Circle implements Shape {
 
 	private final String Color;

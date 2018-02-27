@@ -5,5 +5,6 @@ package main.GoF.structural.facade;
  */
 interface Shape {
 
+	@SuppressWarnings("unused")
 	ShapeEnum draw();
 }

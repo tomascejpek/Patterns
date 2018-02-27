@@ -5,6 +5,7 @@ package main.GoF.structural.adapter;
  */
 public class Adaptee {
 
+	@SuppressWarnings("SameReturnValue")
 	public String oldRequest() {
 		return "oldRequest";
 	}
