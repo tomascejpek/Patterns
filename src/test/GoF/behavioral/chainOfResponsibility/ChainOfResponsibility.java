@@ -33,7 +33,7 @@ public class ChainOfResponsibility {
 	}
 
 	@Test
-	public void toMuch() {
+	public void tooMuch() {
 		request.setAmount(2000);
 		assertNull(handler.handle(request));
 	}
