@@ -7,12 +7,12 @@ public class NotExpression implements Expression {
 
 	private final Expression expression;
 
-	public NotExpression(Expression expression) {
+	public NotExpression(final Expression expression) {
 		this.expression = expression;
 	}
 
 	@Override
-	public int evaluate() {
-		return -expression.evaluate();
+	public int evaluate(final Context variables) {
+		return -expression.evaluate(variables);
 	}
 }

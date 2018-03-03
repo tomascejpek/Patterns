@@ -8,13 +8,13 @@ public class MinusExpression implements Expression {
 	private final Expression leftExpression;
 	private final Expression rightExpression;
 
-	public MinusExpression(Expression leftExpression, Expression rightExpression) {
+	public MinusExpression(final Expression leftExpression, final Expression rightExpression) {
 		this.leftExpression = leftExpression;
 		this.rightExpression = rightExpression;
 	}
 
 	@Override
-	public int evaluate() {
-		return leftExpression.evaluate() - rightExpression.evaluate();
+	public int evaluate(final Context variables) {
+		return leftExpression.evaluate(variables) - rightExpression.evaluate(variables);
 	}
 }

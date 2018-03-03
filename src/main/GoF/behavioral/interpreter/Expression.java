@@ -5,5 +5,5 @@ package main.GoF.behavioral.interpreter;
  */
 public interface Expression {
 
-	int evaluate();
+	int evaluate(Context variables);
 }
