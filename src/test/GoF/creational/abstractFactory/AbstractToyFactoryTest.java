@@ -33,7 +33,7 @@ public class AbstractToyFactoryTest {
 	@Test
 	public void woodenToysTest() {
 		assertSame(MaterialEnum.WOOD, WOODEN_FACTORY.createHorse().madeOf());
-		assertSame(MaterialEnum.WOOD, WOODEN_FACTORY.createHorse().madeOf());
+		assertSame(MaterialEnum.WOOD, WOODEN_FACTORY.createLama().madeOf());
 	}
 
 	@Test

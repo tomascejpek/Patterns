@@ -12,11 +12,11 @@ import static org.junit.Assert.assertSame;
  */
 public class GetToyFactoryTest {
 
-	private static final GetToyFactory mainFactory = new GetToyFactory();
+	private static final GetToyFactory MAIN_FACTORY = new GetToyFactory();
 
 	@Test
 	public void getWoodenToyFactoryTest() {
-		ToyFactory woodenFactory = mainFactory.getFactory(MaterialEnum.WOOD);
+		ToyFactory woodenFactory = MAIN_FACTORY.getFactory(MaterialEnum.WOOD);
 
 		assertSame(MaterialEnum.WOOD, woodenFactory.createHorse().madeOf());
 		assertSame(MaterialEnum.WOOD, woodenFactory.createLama().madeOf());
@@ -24,7 +24,7 @@ public class GetToyFactoryTest {
 
 	@Test
 	public void getPlasticToyFactoryTest() {
-		ToyFactory plasticFactory = mainFactory.getFactory(MaterialEnum.PLASTIC);
+		ToyFactory plasticFactory = MAIN_FACTORY.getFactory(MaterialEnum.PLASTIC);
 
 		assertSame(MaterialEnum.PLASTIC, plasticFactory.createHorse().madeOf());
 		assertSame(MaterialEnum.PLASTIC, plasticFactory.createLama().madeOf());
