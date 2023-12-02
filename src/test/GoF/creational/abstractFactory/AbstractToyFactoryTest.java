@@ -1,6 +1,8 @@
 package test.GoF.creational.abstractFactory;
 
 import main.GoF.creational.abstractFactory.MaterialEnum;
+import main.GoF.creational.abstractFactory.PlasticHorse;
+import main.GoF.creational.abstractFactory.WoodenLama;
 import main.GoF.creational.abstractFactory.abstractFactory.AbstractFactory;
 import main.GoF.creational.abstractFactory.abstractFactory.PlasticFactory;
 import main.GoF.creational.abstractFactory.abstractFactory.WoodenFactory;
@@ -20,14 +22,22 @@ public class AbstractToyFactoryTest {
 	private static final AbstractFactory PLASTIC_FACTORY = new PlasticFactory();
 
 	@Test
-	public void getFactoryTest() {
-		AbstractFactory plastic = AbstractFactory.getFactory(MaterialEnum.PLASTIC);
-		assertNotNull(plastic);
-		assertSame(PlasticFactory.class, plastic.getClass());
+	public void testAbstractFactoryPlastic() {
+		AbstractFactory abstractFactory = AbstractFactory.getFactory(MaterialEnum.PLASTIC);
+		assertNotNull(abstractFactory);
+		assertSame(PlasticFactory.class, abstractFactory.getClass());
+		assertSame(PlasticHorse.class, abstractFactory.createHorse().getClass());
+		assertSame(MaterialEnum.PLASTIC, abstractFactory.createHorse().madeOf());
 
-		AbstractFactory wooden = AbstractFactory.getFactory(MaterialEnum.WOOD);
-		assertNotNull(wooden);
-		assertSame(WoodenFactory.class, wooden.getClass());
+	}
+
+	@Test
+	public void testAbstractFactoryWooden() {
+		AbstractFactory abstractFactory = AbstractFactory.getFactory(MaterialEnum.WOOD);
+		assertNotNull(abstractFactory);
+		assertSame(WoodenFactory.class, abstractFactory.getClass());
+		assertSame(WoodenLama.class, abstractFactory.createLama().getClass());
+		assertSame(MaterialEnum.WOOD, abstractFactory.createLama().madeOf());
 	}
 
 	@Test
