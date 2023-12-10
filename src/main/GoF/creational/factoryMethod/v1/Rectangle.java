@@ -1,4 +1,4 @@
-package main.GoF.creational.factoryMethod;
+package main.GoF.creational.factoryMethod.v1;
 
 /**
  * Created by Tomas Cejpek on 21/02/2018.

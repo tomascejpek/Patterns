@@ -1,6 +1,6 @@
-package test.GoF.creational.factoryMethod;
+package test.GoF.creational.factoryMethod.v1;
 
-import main.GoF.creational.factoryMethod.Rectangle;
+import main.GoF.creational.factoryMethod.v1.Rectangle;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotSame;
